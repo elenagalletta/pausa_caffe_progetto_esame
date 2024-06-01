@@ -144,10 +144,18 @@ nav {
     width: 100%;
 }
 
-#blocco-hero {
+#blocco-hero-home {
     position: absolute;
     z-index: 0;
     top: 12vw;
+    text-align: center;
+    width: 100%;
+}
+
+#blocco-hero {
+    position: absolute;
+    z-index: 0;
+    top: 20vw;
     text-align: center;
     width: 100%;
 }
@@ -272,4 +280,26 @@ gap: 30px;
 }
 
 
+/*PAGINA STORIA E ORIGINI*/
 
+.testo-corrente {
+    max-width: 500px;
+}
+
+.titolo-sezione {
+    margin: 60px 0 30px 252px;
+}
+
+.blocco-sezione {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    max-width: 1029px;
+    margin: 0 auto 60px auto;
+}
+
+.img-sezione {
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 60px;
+}
