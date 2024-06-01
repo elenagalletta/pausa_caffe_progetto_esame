@@ -1,0 +1,210 @@
+/*Impostazione font*/
+@import url(switzer.css);
+
+@font-face {
+    font-family: 'Switzer-Regular';
+    src: url('../font/Switzer-Regular.woff2') format('woff2'),
+         url('../font/Switzer-Regular.woff') format('woff'),
+         url('../font/Switzer-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'Switzer-Italic';
+    src: url('../font/Switzer-Italic.woff2') format('woff2'),
+         url('../font/Switzer-Italic.woff') format('woff'),
+         url('../font/Switzer-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'Switzer-Medium';
+    src: url('../font/Switzer-Medium.woff2') format('woff2'),
+         url('../font/Switzer-Medium.woff') format('woff'),
+         url('../font/Switzer-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Switzer-Bold';
+    src: url('../font/Switzer-Bold.woff2') format('woff2'),
+         url('../font/Switzer-Bold.woff') format('woff'),
+         url('../font/Switzer-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+/*Impostazioni preliminarie*/
+  * {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #523822;
+    font-family: 'Switzer', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;   
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+#navbar-list li a, h1, h2 {
+    color: #F9F5F1;
+}
+
+h1 /*Titolo hero*/{
+    font-size: 80px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+h2 /*Sottotitolo hero*/{
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+h3 /*Titolo sezione*/{
+    font-size: 25px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+h4 /*Titolo paragrafo*/{
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+h5 /*Testo corrente*/{
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: normal;
+}
+
+/*Navbar - BARRA DI NAVIGAZIONE*/
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+#marchio-pausa-caffe {
+    color: inherit;
+}
+
+#nav-main {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    height: 50px;
+    margin: 20px 6vw 0 6vw;
+}
+
+#navbar-list {
+    margin: 0 auto;
+}
+
+#navbar-list ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style-type: none;
+}
+
+#navbar-list ul :hover {
+    text-decoration: underline;
+    font-family: 'Switzer-Bold';
+}
+
+#navbar-list li a {
+    color: #F9F5F1;
+}
+
+/*.nav-scrolled {
+    background-color: #F9F5F1;
+    color: #523822;
+}*/
+
+/*Hero section - SEZIONE HERO*/
+.img-hero {
+    width: 100%;
+}
+
+#blocco-hero {
+    position: absolute;
+    z-index: 0;
+    top: 12vw;
+    text-align: center;
+    width: 100%;
+}
+
+#hero-marchio {
+    width: 50vw;
+    margin-bottom: 20px;
+}
+
+#button-hero {
+    margin-top: 20px;
+    padding: 14px 24px;
+    background-color: #6D8F71; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 8px; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 8px; 
+    display: inline-flex;
+}
+
+#testo-button-hero {
+    color: #F9F5F6; 
+    font-size: 16px;
+    line-height: 30px; 
+    word-wrap: break-word;
+    text-decoration: underline;
+}
+
+
+/*Card sezioni home*/
+
+#blocco-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    width: 960px;
+    margin: 60px auto 0 auto;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #F9F5F1;
+    margin: 0 auto;
+    position: relative;
+    padding: 12px 12px 12px 20px;
+    border-radius: 0 0 20px 20px;
+    font-weight: normal;
+}
