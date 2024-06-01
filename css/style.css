@@ -257,10 +257,10 @@ footer {
 }
 
 #social-footer {
-width: 120px;
-display: flex;
-justify-content: space-between;
-gap: 30px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 #blocco-footer-sx {
@@ -280,7 +280,7 @@ gap: 30px;
 }
 
 
-/*PAGINA STORIA E ORIGINI*/
+/*Struttura testo/immagini delle sezioni*/
 
 .testo-corrente {
     max-width: 500px;
@@ -298,8 +298,56 @@ gap: 30px;
     margin: 0 auto 60px auto;
 }
 
+.blocco-sezione-con-icona {
+    margin-bottom: 60px;
+    max-width: 1029px;
+    margin: 0 auto 60px auto;
+}
+
 .img-sezione {
     display: block;
     margin-inline: auto;
     margin-bottom: 60px;
 }
+
+.paragrafo {
+    margin-bottom: 20px;
+}
+
+.titolo-paragrafo {
+    min-width: 250px;
+}
+
+/*PAGINA MISCELE E TIPOLOGIE*/
+
+.icona-tipologia-caffe {
+    width: 180px;
+    height: 180px;
+}
+
+#blocco-tipologie-caffe {
+    display: flex;
+    max-width: 1029px;
+    gap: 100px;
+    margin: 0 auto 60px auto;
+}
+
+.blocco-icona-caffe h3 {
+    text-align: center;
+    color: #523822;
+}
+
+.icona-titolo-tipologie {
+    display: flex;
+    gap: 20px;
+    width: 50px;
+    height: fit-content;
+}
+
+.blocco-titolo-testo {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
