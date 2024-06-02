@@ -180,6 +180,10 @@ nav {
     display: inline-flex;
 }
 
+#blocco-button-hero :hover {
+    background-color:#83A389;
+}
+
 #testo-button-hero {
     color: #F9F5F6; 
     font-size: 16px;
@@ -236,6 +240,62 @@ nav {
     transform: scale(1.05);
 }
 
+/*FORM EMAIL*/
+
+#form-email {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto 60px auto;
+}
+
+#form-compilazione-email {
+    width: 280px; 
+    height: 30px; 
+    background: white; 
+    border-radius: 10px; 
+    border: 1px #9C9C9C solid;
+    text-align: center;
+}
+
+#testo-compilazione-email p {
+    height: 30px;
+    align-content: center;
+    color: #9C9C9C;
+}
+
+#form-invio-email {
+    width: 140px; 
+    height: 30px; 
+    background-color: #6D8F71;
+    color: #F9F5F1; 
+    border-radius: 10px; 
+    border: 1px #9C9C9C solid;
+    text-align: center;
+}
+
+#form-invio-email :hover {
+    background-color: #83A389;
+    border-radius: 10px;
+    transition-duration: 0s;
+}
+
+#testo-invia-email p {
+    height: 30px;
+    align-content: center;
+}
+
+#blocco-form-dx {
+    display: grid;
+    row-gap: 15px;
+    justify-items: center;
+}
+
+#testo-form {
+    font-size: 20px;
+    max-width: 500px;
+}
+
 /*CARD PAGINA RICETTE*/
 
 #blocco-card-ricette {
@@ -268,7 +328,7 @@ nav {
     text-align: center;
 }
 
-/*ANIMAZIONE CARD RICETE*/
+/*ANIMAZIONE CARD RICETTE*/
 
 .card-animazione-ricette {
     border-radius: 20px;
