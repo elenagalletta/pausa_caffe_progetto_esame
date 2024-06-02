@@ -1,4 +1,4 @@
-/*Impostazione font*/
+/*IMPOSTAZIONE FONT*/
 @import url(switzer.css);
 
 @font-face {
@@ -41,7 +41,8 @@
     font-style: normal;
 }
 
-/*Impostazioni preliminarie*/
+
+/*IMPOSTAZIONI PRELIMINARIE*/
   * {
     margin: 0;
     padding: 0;
@@ -95,15 +96,17 @@ h5 /*Testo corrente*/{
     font-weight: normal;
 }
 
-/*Navbar - BARRA DI NAVIGAZIONE*/
+
+/*NAVBAR - BARRA DI NAVIGAZIONE*/
 nav {
     position: fixed;
     z-index: 10;
     width: 100%;
 }
 
-#marchio-pausa-caffe {
+#navbar-marchio {
     color: inherit;
+    margin-top: 5px;
 }
 
 #nav-main {
@@ -139,7 +142,7 @@ nav {
 }
 
 
-/*Hero section - SEZIONE HERO*/
+/*HERO SECTION*/
 .img-hero {
     width: 100%;
 }
@@ -185,7 +188,7 @@ nav {
 }
 
 
-/*Card sezioni home*/
+/*CARD HOMEPAGE*/
 
 #blocco-card {
     display: grid;
@@ -218,7 +221,7 @@ nav {
     text-align: center;
 }
 
-/*Animazione card*/
+/*ANIMAZIONE CARD HOMEPAGE*/
 
 .card-animazione {
     border-radius: 20px;
@@ -233,7 +236,54 @@ nav {
     transform: scale(1.05);
 }
 
-/*Footer*/
+/*CARD PAGINA RICETTE*/
+
+#blocco-card-ricette {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    width: 960px;
+    margin: 60px auto 60px auto;
+}
+
+.card-ricette {
+    width: 960px;
+    height: 410px;
+}
+
+.card-ricette img {
+    width: 960px;
+    height: 410px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card-title-ricette {
+    color: #F9F5F1;
+    margin: -220px auto;
+    position: relative;
+    border-radius: 0 0 20px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*ANIMAZIONE CARD RICETE*/
+
+.card-animazione-ricette {
+    border-radius: 20px;
+}
+
+.card-animazione-ricette a {
+    text-decoration: none;
+}
+
+.card-animazione-ricette:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+/*FOOTER*/
 footer {
     height: 186px;
     background-color: #523822;
@@ -280,7 +330,7 @@ footer {
 }
 
 
-/*Struttura testo/immagini delle sezioni*/
+/*STRUTTURA TESTO/IMMAGINI PAGINE - vale per tutte le pagine con testo e immagini*/
 
 .testo-corrente {
     max-width: 500px;
