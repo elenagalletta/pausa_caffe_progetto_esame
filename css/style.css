@@ -398,6 +398,7 @@ footer {
 
 .titolo-sezione {
     margin: 60px auto 30px auto;
+    max-width: 1029px;
 }
 
 .blocco-sezione {
