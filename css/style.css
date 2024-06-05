@@ -451,8 +451,9 @@ footer {
 .icona-titolo-tipologie {
     display: flex;
     gap: 20px;
-    width: 50px;
+    max-width: 1029px;
     height: fit-content;
+    align-items: center;
 }
 
 .blocco-titolo-testo {
@@ -462,3 +463,6 @@ footer {
     margin-bottom: 60px;
 }
 
+.svg-icona-tipologie {
+    width: 60px;
+}
