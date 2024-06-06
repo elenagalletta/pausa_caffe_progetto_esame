@@ -447,9 +447,14 @@ footer {
     margin: 0 auto 60px auto;
 }
 
-.blocco-icona-caffe h3 {
+.blocco-icona-caffe h4 {
     text-align: center;
     color: #523822;
+}
+
+.blocco-icona-caffe h4:hover {
+    color: #745F4E;
+    text-decoration: underline;
 }
 
 .icona-titolo-tipologie {
