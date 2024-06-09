@@ -466,6 +466,11 @@ footer {
     margin-bottom: 60px;
 }
 
+.container{
+    display: grid;
+    place-items: center;
+}
+
 .svg-icona-tipologie {
     width: 60px;
 }
