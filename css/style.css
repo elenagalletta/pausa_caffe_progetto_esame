@@ -191,11 +191,6 @@ nav {
     word-wrap: break-word;
 }
 
-/*#video-hero {
-    
-}*/
-
-
 /*CARD HOMEPAGE*/
 
 #blocco-card {
@@ -281,7 +276,6 @@ nav {
 #form-invio-email :hover {
     background-color: #83A389;
     border-radius: 10px;
-    transition-duration: 0s;
 }
 
 #testo-invia-email p {
@@ -430,7 +424,7 @@ footer {
 }
 
 .titolo-paragrafo {
-    min-width: 250px;
+    max-width: 350px;
 }
 
 /*PAGINA MISCELE E TIPOLOGIE*/
@@ -474,4 +468,52 @@ footer {
 
 .svg-icona-tipologie {
     width: 60px;
+}
+
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 1000px) {
+    #blocco-card {
+        grid-template-columns: 1fr 1fr;
+        width: fit-content;
+        margin: 60px auto 60px auto;
+    }
+
+    #form-email {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #form-email {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto 60px auto;
+        width: fit-content;
+    }
+
+    #testo-form {
+        text-align: center;
+        margin: 0 auto 30px auto;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    #blocco-card {
+        grid-template-columns: 1fr;
+    }
+
+    #form-email {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto 60px auto;
+        width: fit-content;
+    }
+
+    #testo-form {
+        text-align: center;
+        margin: 0 auto 30px auto;
+    }
 }
