@@ -466,13 +466,19 @@ footer {
     margin-bottom: 60px;
 }
 
-.container{
-    display: grid;
-    place-items: center;
+/*PAGINA CAFFè DAL MONDO*/
+.icona-nazione {
+    max-width: fit-content;
+    margin-inline: auto;
 }
 
-.svg-icona-tipologie {
-    width: 60px;
+#elenco-nazioni a {
+    color: #523822;
+    text-decoration: underline;
+}
+
+#elenco-nazioni a:hover {
+    color: #6D8F71;
 }
 
 /*Hamburger menu*/
