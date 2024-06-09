@@ -372,11 +372,11 @@ footer {
 }
 
 #blocco-footer-sx {
-    margin: 30px 0 30px 90px;
+    margin: 30px 0 30px 6vw;
 }
 
 #blocco-footer-dx {
-    margin: 30px 90px 30px 0;
+    margin: 30px 6vw 30px 0;
 }
 
 #marchio-footer, #powered-by-footer {
@@ -549,23 +549,31 @@ footer {
 
 /*RESPONSIVE DESIGN*/
 @media (max-width: 1000px) {
+    /*Card sezioni homepage*/
     #blocco-card {
         grid-template-columns: 1fr 1fr;
         width: fit-content;
         margin: 60px auto 60px auto;
     }
 
+    /*Form email*/
     #form-email {
         max-width: 800px;
     }
 
+    /*Navbar*/
     #navbar-list ul {
         gap: 20px;
+    }
+
+    /*Hero section*/
+    #hero-sottotitolo {
+        font-size: 25px;
     }
 }
 
 @media (max-width: 900px) {
-
+    /*Form email*/
     #form-email {
         display: grid;
         grid-template-columns: 1fr;
@@ -578,10 +586,16 @@ footer {
         margin: 0 auto 30px auto;
     }
 
+    /*Navbar*/
     #navbar-list {
         margin: 0 0 0 auto;
         font-size: 15px;
         gap: 10px;
+    }
+
+    /*Hero section*/
+    #hero-sottotitolo {
+        font-size: 20px;
     }
 }
 
@@ -618,4 +632,113 @@ footer {
         margin: 0 auto 30px auto;
     }
 
+    .img-hero {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #blocco-hero-home {
+        margin-top: 8vw;
+    }
+
+}
+
+@media (max-width: 550px) {
+    /*Form email homepage*/
+    #testo-form {
+        max-width: 350px;
+        font-size: 18px;
+    }
+
+    /*Footer*/
+    #blocco-footer-sx {
+        max-width: 200px;
+    }
+
+    #social-footer {
+        width: 100px;
+        gap: 20px;
+    }
+
+    #info-footer {
+        gap: 20px;
+        text-decoration: underline;
+    }
+
+    #aba-footer {
+        margin-bottom: 10px;
+    }
+
+    #marchio-footer {
+        width: 180px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    #blocco-footer-dx {
+        margin-top: 35px;
+    }
+
+    /*Hero section*/
+    .img-hero {
+        height: 90vw;
+        object-fit: cover;
+        object-position: left bottom;
+    }
+
+    #blocco-hero-home {
+        top: 15vw;
+    }
+
+    #hero-marchio {
+        width: 60vw;
+    }
+
+    #hero-sottotitolo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 550px) {
+    #blocco-footer-sx {
+        max-width: 150px;
+    }
+
+    #social-footer {
+        width: 80px;
+        gap: 10px;
+    }
+
+    #info-footer {
+        gap: 10px;
+    }
+
+    #aba-footer {
+        margin-bottom: 20px;
+    }
+
+    #marchio-footer {
+        width: 150px;
+    }
+
+
+    #blocco-footer-dx {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    #button-hero {
+        display: none;
+    }
+
+    #hero-marchio {
+        width: 65vw;
+    }
+
+    #blocco-hero-home {
+        top: 20vw;
+    }
 }
