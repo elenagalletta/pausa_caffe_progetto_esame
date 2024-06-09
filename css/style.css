@@ -404,8 +404,8 @@ footer {
 }
 
 .blocco-sezione {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 60px;
     max-width: 1029px;
     margin: 0 auto 60px auto;
@@ -439,14 +439,19 @@ footer {
 }
 
 #blocco-tipologie-caffe {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 1029px;
-    gap: 100px;
+    column-gap: 60px;
     margin: 0 auto 60px auto;
 }
 
-.blocco-icona-caffe h4 {
+.blocco-icona-caffe {
     text-align: center;
+    width: fit-content;
+}
+
+.blocco-icona-caffe h4 {
     color: #523822;
 }
 
@@ -468,6 +473,11 @@ footer {
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 60px;
+}
+
+.icona-titolo-tipologie img {
+    width: 60px;
+    height: 60px;
 }
 
 /*PAGINA CAFFè DAL MONDO*/
@@ -528,7 +538,7 @@ footer {
 #menu {
     width: fit-content;
     height: fit-content;
-    margin: auto;
+    margin: 30vw auto;
 }
 
 #menu-list {
@@ -577,6 +587,29 @@ footer {
 
 
 /*RESPONSIVE DESIGN*/
+@media (max-width: 1100px) {
+    #blocco-tipologie-caffe {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        max-width: fit-content;
+        gap: 30px;
+    }
+
+    .blocco-icona-caffe {
+        text-align: center;
+        width: 200px;
+    }
+
+    #blocco-tipologie-caffe a {
+        width: fit-content;
+    }
+
+    .blocco-sezione, .titolo-sezione, .img-sezione {
+        max-width: 800px;
+    }
+    
+}
+
 @media (max-width: 1000px) {
     /*Card sezioni homepage*/
     #blocco-card {
@@ -636,9 +669,18 @@ footer {
     #blocco-hero {
         top: 180px;
     }
+
+    .blocco-sezione, .titolo-sezione, .img-sezione {
+        max-width: 650px;
+    }
+
+    .titolo-paragrafo {
+        max-width: 250px;
+    }
 }
 
 @media (max-width: 800px) {
+    /*Navbar*/
     #navbar-list {
         display: none;
     }
@@ -652,6 +694,7 @@ footer {
         justify-content: space-between;
     }
 
+    /*Hero section*/
     #blocco-hero {
         top: 160px;
     }
@@ -663,11 +706,12 @@ footer {
 }
 
 @media (max-width: 700px) {
-    
+    /*Card sezioni homepage*/
     #blocco-card {
         grid-template-columns: 1fr;
     }
 
+    /*Form email*/
     #form-email {
         display: grid;
         grid-template-columns: 1fr;
@@ -680,6 +724,7 @@ footer {
         margin: 0 auto 30px auto;
     }
 
+    /*Hero section*/
     .img-hero {
         height: 500px;
         object-fit: cover;
@@ -693,16 +738,40 @@ footer {
         top: 200px;
     }
 
+    .blocco-sezione {
+        grid-template-columns: 1fr;
+        margin-inline: 6vw;
+    }
+
+    .titolo-sezione {
+        margin-inline: 6vw;
+    }
+
+    .titolo-paragrafo {
+        margin-bottom: 15px;
+    }
+
+    .img-sezione {
+        max-width: 500px;
+    }
+
 }
 
 @media (max-width: 600px) {
+    /*Hero section*/
     #blocco-hero h1 {
-        max-width: 400px;
+        max-width: 500px;
     }
 
     #hero-sottotitolo {
         max-width: 300px;
     }
+
+    .img-sezione {
+        max-width: fit-content;
+        object-position: center;
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -764,6 +833,7 @@ footer {
 }
 
 @media (max-width: 500px) {
+    /*Hero section*/
     #blocco-hero {
         top: 35vw;
     }
@@ -771,28 +841,30 @@ footer {
     #blocco-hero h1 {
         font-size: 40px;
     }
+
+    #info-footer {
+        gap: 10px;
+    }
 }
 
 @media (max-width: 400px) {
-    #button-hero {
-        display: none;
-    }
+    /*Hero section*/
 
     #hero-marchio {
-        width: 65vw;
+        width: 80vw;
     }
 
     #blocco-hero-home {
-        top: 20vw;
+        top: 40vw;
     }
 
-    #hero-section img {
+    .img-hero {
         height: 180vw;
         object-fit: cover;
         object-position: center;
     }
 
     #blocco-hero {
-        top: 65vw;
+        top: 70vw;
     }
 }
