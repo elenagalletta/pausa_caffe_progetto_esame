@@ -470,6 +470,82 @@ footer {
     width: 60px;
 }
 
+/*Hamburger menu*/
+
+#hamburger-menu {
+    background-color:rgba(25, 14, 3, 0.9);
+    color: #F9F5F1;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    display: none;
+    backdrop-filter: blur(10px);
+    margin: auto;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #F9F5F1;
+    font-size: 20px;
+}
+
+.menu-icon {
+    width: 25px;
+    margin-right: 16px;
+    vertical-align: text-bottom;
+}
+
+#menu {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+#menu-list {
+    margin: 15vw;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+#menu-list-footer {
+    display: flex;
+    list-style-type: none;
+    margin: 30px 15vw;
+    gap: 15px;
+    text-decoration: underline;
+    max-width: 227.05px;
+}
+
+.menu-item-footer {
+    color: #F9F5F1;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#menu-list-footer a {
+    text-decoration: none;
+}
+
+#menu-xmark {
+    width: 22px;
+    margin: 5vw 90vw 0;
+    pointer-events: none;
+}
+
+.menu-visible {
+    display: block !important;
+}
+
+#hamburger-button {
+    display: none;
+    width: 23px;
+}
+
 
 /*RESPONSIVE DESIGN*/
 @media (max-width: 1000px) {
@@ -481,6 +557,10 @@ footer {
 
     #form-email {
         max-width: 800px;
+    }
+
+    #navbar-list ul {
+        gap: 20px;
     }
 }
 
@@ -496,6 +576,27 @@ footer {
     #testo-form {
         text-align: center;
         margin: 0 auto 30px auto;
+    }
+
+    #navbar-list {
+        margin: 0 0 0 auto;
+        font-size: 15px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    #navbar-list {
+        display: none;
+    }
+
+    #hamburger-button {
+        display: block;
+    }
+
+    #nav-main {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -516,4 +617,5 @@ footer {
         text-align: center;
         margin: 0 auto 30px auto;
     }
+
 }
