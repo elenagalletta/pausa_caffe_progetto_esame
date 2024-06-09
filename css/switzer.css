@@ -122,7 +122,7 @@
   font-weight: 500;
   font-display: swap;
   font-style: italic;
-}
+}*/
 @font-face {
   font-family: 'Switzer-Semibold';
   src: url('../fonts/Switzer-Semibold.woff2') format('woff2'),
@@ -132,6 +132,7 @@
   font-display: swap;
   font-style: normal;
 }
+/*
 @font-face {
   font-family: 'Switzer-SemiboldItalic';
   src: url('../fonts/Switzer-SemiboldItalic.woff2') format('woff2'),

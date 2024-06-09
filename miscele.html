@@ -9,8 +9,31 @@
     <link href="https://www.fontshare.com/fonts/switzer" rel="stylesheet">
 </head>
 <body>
-      <!--Navbar-->
-      <nav id="navbar">
+    <!--Hamburger menu-->
+    <div id="hamburger-menu">
+        <div id="menu-xmark">
+            <img src="icone/menu-x.png"></img>
+        </div>
+        <div id="menu">
+                <ul id="menu-list">
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-homepage.png"></img><a href="index.html">Home</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-storia.png"></img><a href="storia.html">Storia</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-miscele.png"></img><a href="miscele.html">Miscele e tipologie</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-curiosita.png"></img><a href="curiosità.html">Curiosità</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-ricette.png"></img><a href="ricette.html">Ricette</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-caffe-dal-mondo.png"></img><a href="caffè-dal-mondo.html">Caffè dal mondo</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-produzione.png"></img><a href="produzione.html">Produzione</a></li>
+                </ul>
+
+                <ul id="menu-list-footer">
+                    <a href="https://www.abacatania.it/"><li class="menu-item-footer">Privacy</li></a>
+                    <a href="https://www.abacatania.it/"><li class="menu-item-footer">Chi siamo</li></a>
+                </ul>
+        </div>
+    </div>
+
+    <!--Navbar-->
+    <nav id="navbar">
         <div id="nav-main">
             <a href="index.html" id="navbar-marchio"><img src="icone/marchio-navbar.svg"></img></a>
 
@@ -26,12 +49,14 @@
                 </ul>
             </div>
 
+            <!--Menu button-->
+            <div id="hamburger-button"><img src="icone/menu-hamburger.png"></img></div>
+
         </div>
     </nav>
 
     <!--Hero section-->
     <div id="hero-section">
-        <!--<video class="img-hero" src="img/hero-video.mp4" controls></video> ------- Prova video hero-->
         <img class="img-hero" src="img/hero-miscele-e-tipologie.jpg"></img>
        
         <div id="blocco-hero">
@@ -48,34 +73,34 @@
         <a href="#caffe-macinato">
             <div class="blocco-icona-caffe">
                 <img class="icona-tipologia-caffe" src="icone/caffe-macinato.svg"></img>
-                <h3>Caffè macinato</h3>
+                <h4>Caffè macinato</h4>
             </div>
         </a>
 
 
         <a href="#caffe-in-cialde">
             <div class="blocco-icona-caffe">
-                <img class="icona-tipologia-caffe" src="icone/cialde.svg"></img>
-                <h3>Cialde</h3>
+                <img class="icona-tipologia-caffe" src="icone/caffe-cialde.svg"></img>
+                <h4>Cialde</h4>
             </div>
         </a>
 
         <a href="#caffe-in-capsule">
             <div class="blocco-icona-caffe">
-                <img class="icona-tipologia-caffe" src="icone/capsule.svg"></img>
-                <h3>Capsule</h3>
+                <img class="icona-tipologia-caffe" src="icone/caffe-capsule.svg"></img>
+                <h4>Capsule</h4>
             </div>
         </a>
 
         <a href="#caffe-in-grani">
             <div class="blocco-icona-caffe">
                 <img class="icona-tipologia-caffe" src="icone/caffe-grani.svg"></img>
-                <h3>Caffè in grani</h3>
+                <h4>Caffè in grani</h4>
             </div>
         </a>
     </div>
 
-    <img class="img-sezione" src="img/miscele-img1.jpg"></img>
+    <img class="img-sezione" src="img/miscele-img1-versione2.jpg"></img>
 
      <!--Blocco MISCELE-->   
     <h3 class="titolo-sezione">Le miscele</h3>
@@ -130,8 +155,8 @@
    <!--Blocco CAFFÈ IN GRANI-->
     <div class="blocco-sezione-con-icona" id="caffe-in-grani">
         <div class="icona-titolo-tipologie">
-            <img src="icone/caffe-grani.svg"></img>
-            <h4 class="titolo-paragrafo">Caffè in grani</h4>
+            <img class="svg-icona-tipologie" src="icone/caffe-grani.svg"></img>
+            <h3 class="titolo-paragrafo">Caffè in grani</h3>
         </div>
         
         <div>
@@ -157,8 +182,8 @@
     <!--Blocco CAFFÈ MACINATO-->
     <div class="blocco-sezione-con-icona" id="caffe-macinato">
         <div class="icona-titolo-tipologie">
-            <img src="icone/caffe-macinato.svg"></img>
-            <h4 class="titolo-paragrafo">Caffè macinato</h4>
+            <img class="svg-icona-tipologie" src="icone/caffe-macinato.svg"></img>
+            <h3 class="titolo-paragrafo">Caffè macinato</h3>
         </div>
         
         <div>
@@ -178,13 +203,15 @@
                     <p class="paragrafo">Macinato per Filtro: Miscela dal gusto più leggero e delicato, adatta per macchine da caffè filtro o French Press.</p>
                 </h5>
             </div>
+        </div>
+
     </div>
 
      <!--Blocco CAFFÈ IN CIALDE-->
      <div class="blocco-sezione-con-icona" id="caffe-in-cialde">
         <div class="icona-titolo-tipologie">
-            <img src="icone/cialde.svg"></img>
-            <h4 class="titolo-paragrafo">Caffè in cialde</h4>
+            <img class="svg-icona-tipologie" src="icone/cialde.svg"></img>
+            <h3 class="titolo-paragrafo">Caffè in cialde</h3>
         </div>
         
         <div>
@@ -203,13 +230,14 @@
                     <p><b>Freschezza:</b> Solitamente sigillate singolarmente per mantenere la freschezza del caffè.</p>
                 </h5>
             </div>
+        </div>
     </div>
 
      <!--Blocco CAFFÈ IN CAPSULE-->
      <div class="blocco-sezione-con-icona" id="caffe-in-capsule">
         <div class="icona-titolo-tipologie">
-            <img src="icone/capsule.svg"></img>
-            <h4 class="titolo-paragrafo">Caffè in capsule</h4>
+            <img class="svg-icona-tipologie" src="icone/capsule.svg"></img>
+            <h3 class="titolo-paragrafo">Caffè in capsule</h3>
         </div>
         
         <div>
@@ -227,13 +255,14 @@
                     <p>Capsule compostabili, capsule in carta, capsule in alluminio.</p>
                 </h5>
             </div>
+        </div>
     </div>
 
      <!--Blocco CAPSULE COMPOSTABILI-->
      <div class="blocco-sezione-con-icona" id="caffe-in-capsule">
         <div class="icona-titolo-tipologie">
-            <img src="icone/capsule.svg"></img>
-            <h4 class="titolo-paragrafo">Capsule compostabili</h4>
+            <img class="svg-icona-tipologie" src="icone/capsule.svg"></img>
+            <h3 class="titolo-paragrafo">Capsule compostabili</h3>
         </div>
         
         <div>
@@ -252,9 +281,11 @@
                     <p><b>Smaltimento:</b> Possono essere compostate in impianti di compostaggio industriale.</p>
                 </h5>
             </div>
+        </div>
     </div>
 
     <img class="img-sezione" src="img/miscele-img3.jpg"></img>
+    
     </div>
 
     <!--Footer-->
@@ -285,5 +316,6 @@
 
 <!--Javascript-->
 <script src="js/navbar.js"></script>
+<script src="js/hamburger-menu.js"></script>
 </body>
 </html>

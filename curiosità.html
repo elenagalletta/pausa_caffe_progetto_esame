@@ -9,25 +9,51 @@
     <link href="https://www.fontshare.com/fonts/switzer" rel="stylesheet">
 </head>
 <body>
-      <!--Navbar-->
-      <nav id="navbar">
-        <div id="nav-main">
-            <a href="index.html" id="navbar-marchio"><img src="icone/marchio-navbar.svg"></img></a>
-
-            <div id="navbar-list">
-                <ul>
-                    <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="storia.html">Storia</a></li>
-                    <li class="nav-item"><a href="miscele.html">Miscele</a></li>
-                    <li class="nav-item"><a href="curiosità.html">Curiosità</a></li>
-                    <li class="nav-item"><a href="ricette.html">Ricette</a></li>
-                    <li class="nav-item"><a href="caffè-dal-mondo.html">Caffè dal mondo</a></li>
-                    <li class="nav-item"><a href="produzione.html">Produzione</a></li>
-                </ul>
-            </div>
-
+      <!--Hamburger menu-->
+      <div id="hamburger-menu">
+        <div id="menu-xmark">
+            <img src="icone/menu-x.png"></img>
         </div>
-    </nav>
+        <div id="menu">
+                <ul id="menu-list">
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-homepage.png"></img><a href="index.html">Home</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-storia.png"></img><a href="storia.html">Storia</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-miscele.png"></img><a href="miscele.html">Miscele e tipologie</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-curiosita.png"></img><a href="curiosità.html">Curiosità</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-ricette.png"></img><a href="ricette.html">Ricette</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-caffe-dal-mondo.png"></img><a href="caffè-dal-mondo.html">Caffè dal mondo</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-produzione.png"></img><a href="produzione.html">Produzione</a></li>
+                </ul>
+
+                <ul id="menu-list-footer">
+                    <a href="https://www.abacatania.it/"><li class="menu-item-footer">Privacy</li></a>
+                    <a href="https://www.abacatania.it/"><li class="menu-item-footer">Chi siamo</li></a>
+                </ul>
+        </div>
+    </div>
+
+  <!--Navbar-->
+  <nav id="navbar">
+    <div id="nav-main">
+        <a href="index.html" id="navbar-marchio"><img src="icone/marchio-navbar.svg"></img></a>
+
+        <div id="navbar-list">
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="storia.html">Storia</a></li>
+                <li class="nav-item"><a href="miscele.html">Miscele</a></li>
+                <li class="nav-item"><a href="curiosità.html">Curiosità</a></li>
+                <li class="nav-item"><a href="ricette.html">Ricette</a></li>
+                <li class="nav-item"><a href="caffè-dal-mondo.html">Caffè dal mondo</a></li>
+                <li class="nav-item"><a href="produzione.html">Produzione</a></li>
+            </ul>
+        </div>
+
+        <!--Menu button-->
+        <div id="hamburger-button"><img src="icone/menu-hamburger.png"></img></div>
+
+    </div>
+</nav>
 
     <!--Hero section-->
     <div id="hero-section">
@@ -126,5 +152,6 @@
 
 <!--Javascript-->
 <script src="js/navbar.js"></script>
+<script src="js/hamburger-menu.js"></script>
 </body>
 </html>

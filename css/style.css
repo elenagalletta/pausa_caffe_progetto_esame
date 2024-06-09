@@ -191,7 +191,6 @@ nav {
     word-wrap: break-word;
 }
 
-
 /*CARD HOMEPAGE*/
 
 #blocco-card {
@@ -277,7 +276,6 @@ nav {
 #form-invio-email :hover {
     background-color: #83A389;
     border-radius: 10px;
-    transition-duration: 0s;
 }
 
 #testo-invia-email p {
@@ -374,11 +372,11 @@ footer {
 }
 
 #blocco-footer-sx {
-    margin: 30px 0 30px 90px;
+    margin: 30px 0 30px 6vw;
 }
 
 #blocco-footer-dx {
-    margin: 30px 90px 30px 0;
+    margin: 30px 6vw 30px 0;
 }
 
 #marchio-footer, #powered-by-footer {
@@ -426,7 +424,7 @@ footer {
 }
 
 .titolo-paragrafo {
-    min-width: 250px;
+    max-width: 350px;
 }
 
 /*PAGINA MISCELE E TIPOLOGIE*/
@@ -443,16 +441,22 @@ footer {
     margin: 0 auto 60px auto;
 }
 
-.blocco-icona-caffe h3 {
+.blocco-icona-caffe h4 {
     text-align: center;
     color: #523822;
+}
+
+.blocco-icona-caffe h4:hover {
+    color: #745F4E;
+    text-decoration: underline;
 }
 
 .icona-titolo-tipologie {
     display: flex;
     gap: 20px;
-    width: 50px;
+    max-width: 1029px;
     height: fit-content;
+    align-items: center;
 }
 
 .blocco-titolo-testo {
@@ -467,3 +471,279 @@ footer {
     place-items: center;
 }
 
+.svg-icona-tipologie {
+    width: 60px;
+}
+
+/*Hamburger menu*/
+
+#hamburger-menu {
+    background-color:rgba(25, 14, 3, 0.9);
+    color: #F9F5F1;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    display: none;
+    backdrop-filter: blur(10px);
+    margin: auto;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #F9F5F1;
+    font-size: 20px;
+}
+
+.menu-icon {
+    width: 25px;
+    margin-right: 16px;
+    vertical-align: text-bottom;
+}
+
+#menu {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+#menu-list {
+    margin: 15vw;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+#menu-list-footer {
+    display: flex;
+    list-style-type: none;
+    margin: 30px 15vw;
+    gap: 15px;
+    text-decoration: underline;
+    max-width: 227.05px;
+}
+
+.menu-item-footer {
+    color: #F9F5F1;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#menu-list-footer a {
+    text-decoration: none;
+}
+
+#menu-xmark {
+    width: 22px;
+    margin: 5vw 90vw 0;
+    pointer-events: none;
+}
+
+.menu-visible {
+    display: block !important;
+}
+
+#hamburger-button {
+    display: none;
+    width: 23px;
+}
+
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 1000px) {
+    /*Card sezioni homepage*/
+    #blocco-card {
+        grid-template-columns: 1fr 1fr;
+        width: fit-content;
+        margin: 60px auto 60px auto;
+    }
+
+    /*Form email*/
+    #form-email {
+        max-width: 800px;
+    }
+
+    /*Navbar*/
+    #navbar-list ul {
+        gap: 20px;
+    }
+
+    /*Hero section*/
+    #hero-sottotitolo {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    /*Form email*/
+    #form-email {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto 60px auto;
+        width: fit-content;
+    }
+
+    #testo-form {
+        text-align: center;
+        margin: 0 auto 30px auto;
+    }
+
+    /*Navbar*/
+    #navbar-list {
+        margin: 0 0 0 auto;
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    /*Hero section*/
+    #hero-sottotitolo {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    #navbar-list {
+        display: none;
+    }
+
+    #hamburger-button {
+        display: block;
+    }
+
+    #nav-main {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    #blocco-card {
+        grid-template-columns: 1fr;
+    }
+
+    #form-email {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto 60px auto;
+        width: fit-content;
+    }
+
+    #testo-form {
+        text-align: center;
+        margin: 0 auto 30px auto;
+    }
+
+    .img-hero {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #blocco-hero-home {
+        margin-top: 8vw;
+    }
+
+}
+
+@media (max-width: 550px) {
+    /*Form email homepage*/
+    #testo-form {
+        max-width: 350px;
+        font-size: 18px;
+    }
+
+    /*Footer*/
+    #blocco-footer-sx {
+        max-width: 200px;
+    }
+
+    #social-footer {
+        width: 100px;
+        gap: 20px;
+    }
+
+    #info-footer {
+        gap: 20px;
+        text-decoration: underline;
+    }
+
+    #aba-footer {
+        margin-bottom: 10px;
+    }
+
+    #marchio-footer {
+        width: 180px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    #blocco-footer-dx {
+        margin-top: 35px;
+    }
+
+    /*Hero section*/
+    .img-hero {
+        height: 90vw;
+        object-fit: cover;
+        object-position: left bottom;
+    }
+
+    #blocco-hero-home {
+        top: 15vw;
+    }
+
+    #hero-marchio {
+        width: 60vw;
+    }
+
+    #hero-sottotitolo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 550px) {
+    #blocco-footer-sx {
+        max-width: 150px;
+    }
+
+    #social-footer {
+        width: 80px;
+        gap: 10px;
+    }
+
+    #info-footer {
+        gap: 10px;
+    }
+
+    #aba-footer {
+        margin-bottom: 20px;
+    }
+
+    #marchio-footer {
+        width: 150px;
+    }
+
+
+    #blocco-footer-dx {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    #button-hero {
+        display: none;
+    }
+
+    #hero-marchio {
+        width: 65vw;
+    }
+
+    #blocco-hero-home {
+        top: 20vw;
+    }
+}

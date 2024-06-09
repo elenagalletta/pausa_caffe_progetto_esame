@@ -9,8 +9,31 @@
     <link href="https://www.fontshare.com/fonts/switzer" rel="stylesheet">
 </head>
 <body>
-      <!--Navbar-->
-      <nav id="navbar">
+    <!--Hamburger menu-->
+    <div id="hamburger-menu">
+        <div id="menu-xmark">
+            <img src="icone/menu-x.png"></img>
+        </div>
+        <div id="menu">
+                <ul id="menu-list">
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-homepage.png"></img><a href="index.html">Home</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-storia.png"></img><a href="storia.html">Storia</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-miscele.png"></img><a href="miscele.html">Miscele e tipologie</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-curiosita.png"></img><a href="curiosità.html">Curiosità</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-ricette.png"></img><a href="ricette.html">Ricette</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-caffe-dal-mondo.png"></img><a href="caffè-dal-mondo.html">Caffè dal mondo</a></li>
+                    <li class="menu-item"><img class="menu-icon" src="icone/menu-produzione.png"></img><a href="produzione.html">Produzione</a></li>
+                </ul>
+
+                <ul id="menu-list-footer">
+                    <a href="https://www.abacatania.it/"><li class="menu-item-footer">Privacy</li></a>
+                    <a href="https://www.abacatania.it/"><li class="menu-item-footer">Chi siamo</li></a>
+                </ul>
+        </div>
+    </div>
+
+    <!--Navbar-->
+    <nav id="navbar">
         <div id="nav-main">
             <a href="index.html" id="navbar-marchio"><img src="icone/marchio-navbar.svg"></img></a>
 
@@ -26,12 +49,14 @@
                 </ul>
             </div>
 
+            <!--Menu button-->
+            <div id="hamburger-button"><img src="icone/menu-hamburger.png"></img></div>
+
         </div>
     </nav>
 
      <!--Hero section-->
      <div id="hero-section">
-        <!--<video class="img-hero" src="img/hero-video.mp4" controls></video> ------- Prova video hero-->
         <img class="img-hero" src="img/hero-produzione.jpg"></img>
        
         <div id="blocco-hero">
@@ -40,14 +65,14 @@
         </div>
     </div>
 
-     <!--Sezione produzioni-->
+     <!--Sezione tipologie di macchine-->
      <h3 class="titolo-sezione">Tipologie di macchine</h3>
 
      <div class="blocco-sezione">
          <h4 class="titolo-paragrafo">Introduzione</h4>
          <h5 class="testo-corrente">
              <p class="paragrafo">Il caffè è molto più di una semplice bevanda; è una tradizione e un'arte che attraversa confini e culture. In ogni angolo del pianeta, il caffè viene preparato e gustato in modi unici e affascinanti, riflettendo la storia e le abitudini di diverse comunità. </p>
-             <p class="paragrafo">Esplorare le varie tipologie di preparazione del caffè è come intraprendere un viaggio intorno al mondo, scoprendo come ingredienti, tecniche e tradizioni locali si combinano per creare esperienze sensoriali uniche. In questa sezione, ti guideremo attraverso le diverse modalità di preparazione nel mondo, in un'avventura culinaria che celebra il caffè in tutte le sue forme.</p>
+             <p>Esplorare le varie tipologie di preparazione del caffè è come intraprendere un viaggio intorno al mondo, scoprendo come ingredienti, tecniche e tradizioni locali si combinano per creare esperienze sensoriali uniche. In questa sezione, ti guideremo attraverso le diverse modalità di preparazione nel mondo, in un'avventura culinaria che celebra il caffè in tutte le sue forme.</p>
          </h5>
      </div>
  
@@ -56,7 +81,7 @@
          <h5 class="testo-corrente">
              <p class="paragrafo">Utilizzano una leva che l'utente deve spingere per generare la pressione necessaria per estrarre l'espresso.</p>
              <p class="paragrafo"><b>Vantaggi:</b> controllo totale sul processo di estrazione.</p>
-             <p> ><b>Svantaggi</b> richiedono esperienza e abilità per ottenere risultati consistenti.</p>
+             <p><b>Svantaggi</b> richiedono esperienza e abilità per ottenere risultati consistenti.</p>
          </h5>
      </div>
 
@@ -67,7 +92,7 @@
         <h5 class="testo-corrente">
             <p class="paragrafo">Sono dotate di una pompa elettrica che l'utente attiva e disattiva manualmente per controllare l'estrazione.</p>
             <p class="paragrafo"><b>Vantaggi:</b>  buon equilibrio tra controllo manuale e facilità d'uso. </p>
-            <p class="paragrafo"><b>Svantaggi</b> necessitano un certo grado di competenza per ottimizzare l'estrazione.</p>
+            <p><b>Svantaggi:</b> necessitano un certo grado di competenza per ottimizzare l'estrazione.</p>
         </h5>
     </div>
 
@@ -76,7 +101,7 @@
         <h5 class="testo-corrente">
             <p class="paragrafo">Automatizzando il controllo della quantità di acqua utilizzata per l'estrazione, l'utente deve solo premere un pulsante.</p>
             <p class="paragrafo"><b>Vantaggi:</b> facili da usare, costanza nella qualità del caffè.</p>
-            <p class="paragrafo"><b>Svanataggi:</b> meno controllo dell'estrazione rispetto alle macchine semiautomatiche.</p>
+            <p><b>Svanataggi:</b> meno controllo dell'estrazione rispetto alle macchine semiautomatiche.</p>
         </h5>
     </div>
 
@@ -84,8 +109,8 @@
         <h4 class="titolo-paragrafo">French Press (o caffettiera a stantuffo)</h4>
         <h5 class="testo-corrente">
             <p class="paragrafo">Caffè macinato immerso in acqua calda, separato poi con un filtro a stantuffo.</p>
-            <p class="paragrafo">Vantaggi: semplice da usare, produce un caffè ricco e corposo.</p>
-            <p class="paragrafo">Svantaggi: può risultare meno pratico rispetto ad altre macchine, e richiede tempo per la pulizia.</p>
+            <p class="paragrafo"><b>Vantaggi:</b> semplice da usare, produce un caffè ricco e corposo.</p>
+            <p><b>Svantaggi:</b> può risultare meno pratico rispetto ad altre macchine, e richiede tempo per la pulizia.</p>
         </h5>
     </div>
 
@@ -95,8 +120,8 @@
         <h4 class="titolo-paragrafo">Moka</h4>
         <h5 class="testo-corrente">
             <p class="paragrafo">L'acqua nel serbatoio inferiore viene riscaldata e trasformata in vapore, che passa attraverso il caffè macinato creando la bevanda.</p>
-            <p class="paragrafo">Vantaggi: iconica e tradizionale, produce un caffè forte.</p>
-            <p class="paragrafo">Svantaggi: richiede pratica per ottenere risultati ottimali, adatta principalmente per piccole quantità di caffè.</p>
+            <p class="paragrafo"><b>Vantaggi:</b> iconica e tradizionale, produce un caffè forte.</p>
+            <p><b>Svantaggi:</b> richiede pratica per ottenere risultati ottimali, adatta principalmente per piccole quantità di caffè.</p>
         </h5>
     </div>
 
@@ -106,8 +131,8 @@
         <h4 class="titolo-paragrafo">Percolatore elettrico</h4>
         <h5 class="testo-corrente">
             <p class="paragrafo">L'acqua calda ricircola attraverso il caffè macinato più volte.</p>
-            <p class="paragrafo">Vantaggi: capacità di preparare grandi quantità di caffè.</p>
-            <p class="paragrafo">Svantaggi: il caffè può risultare troppo estratto e amaro se non monitorato attentamente.</p>
+            <p class="paragrafo"><b>Vantaggi:</b> capacità di preparare grandi quantità di caffè.</p>
+            <p><b>Svantaggi:</b> il caffè può risultare troppo estratto e amaro se non monitorato attentamente.</p>
         </h5>
     </div>
 
@@ -115,8 +140,8 @@
         <h4 class="titolo-paragrafo">Macchine a cialde o capsule</h4>
         <h5 class="testo-corrente">
             <p class="paragrafo">Utilizzano cialde o capsule preconfezionate di caffè per preparare una singola tazza alla volta.</p>
-            <p class="paragrafo">Vantaggi: estrema comodità e pulizia, ampia varietà di gusti.</p>
-            <p class="paragrafo">Svantaggi: costi più elevati per cialde/capsule rispetto al caffè macinato, impatto ambientale delle capsule.</p>
+            <p class="paragrafo"><b>Vantaggi:</b> estrema comodità e pulizia, ampia varietà di gusti.</p>
+            <p><b>Svantaggi:</b> costi più elevati per cialde/capsule rispetto al caffè macinato, impatto ambientale delle capsule.</p>
         </h5>
     </div>
 
@@ -125,8 +150,8 @@
         <h4 class="titolo-paragrafo">Aereopress</h4>
         <h5 class="testo-corrente">
             <p class="paragrafo">Caffè macinato immerso in acqua e poi pressato manualmente attraverso un filtro.</p>
-            <p class="paragrafo">Vantaggi: portatile, versatile, facile da pulire.</p>
-            <p class="paragrafo">Svantaggi: capacità limitata, richiede pratica per ottenere risultati ottimali.</p>
+            <p class="paragrafo"><b>Vantaggi:</b> portatile, versatile, facile da pulire.</p>
+            <p><b>Svantaggi:</b> capacità limitata, richiede pratica per ottenere risultati ottimali.</p>
         </h5>
     </div>
 
@@ -134,8 +159,8 @@
         <h4 class="titolo-paragrafo">Chemex e V60</h4>
         <h5 class="testo-corrente">
             <p class="paragrafo">Metodi di filtrazione manuale dove l'acqua calda viene versata sul caffè macinato contenuto in un filtro di carta.</p>
-            <p class="paragrafo">Vantaggi: produce un caffè pulito e aromatico, ideale per chi ama il caffè filtrato.</p>
-            <p class="paragrafo">Svantaggi: richiede attenzione e tecnica nel versamento dell'acqua, oltre che un tempo di preparazione più lungo.</p>
+            <p class="paragrafo"><b>Vantaggi:</b> produce un caffè pulito e aromatico, ideale per chi ama il caffè filtrato.</p>
+            <p><b>Svantaggi:</b> richiede attenzione e tecnica nel versamento dell'acqua, oltre che un tempo di preparazione più lungo.</p>
         </h5>
     </div>
 
@@ -148,8 +173,7 @@
         <h5 class="testo-corrente">
             <p class="paragrafo">Prima dell'invenzione delle macchine torrefattrici, il caffè veniva tostato manualmente. I chicchi di caffè venivano messi in padelle e riscaldati su fiamme aperte, mescolandoli continuamente per evitare che si bruciassero. Questo metodo era utilizzato in Etiopia e nelle regioni arabe durante i suoi primi sviluppi.  </p>
             <p class="paragrafo">Nel 1710, il torrefattore francese Du Belloy inventò una torrefattrice con tamburo rotante. Con l'avvento della rivoluzione industriale, l’industria del caffè subì una trasformazione significativa grazie all’avvento delle prime macchine torrefattrici a tamburo, brevettate poi nel 1864 da Jabez Burns.</p>
-            <p class="paragrafo">Successivamente le torrefattrici elettriche consentirono un controllo ancora più 
-                preciso poiché il flusso d'aria calda permise una tostatura uniforme, e la dotazione di sensori e software avanzati diedero la possibilità di monitorare l’estrazione esaltando le caratteristiche uniche dei diversi tipi di caffè. </p>
+            <p>Successivamente le torrefattrici elettriche consentirono un controllo ancora più preciso poiché il flusso d'aria calda permise una tostatura uniforme, e la dotazione di sensori e software avanzati diedero la possibilità di monitorare l’estrazione esaltando le caratteristiche uniche dei diversi tipi di caffè. </p>
         </h5>
 
     </div>
@@ -157,12 +181,11 @@
     <div class="blocco-sezione">
         <h4 class="titolo-paragrafo">Funzionamento</h4>
         <h5 class="testo-corrente">
-            <p class="paragrafo">Tamburo o camera di tostatura: è il cuore della torrefattrice, dove i chicchi di caffè vengono riscaldati. Può essere un tamburo rotante o una camera statica con una fonte di calore.</p>
-            <p class="paragrafo">Sistema di riscaldamento: la macchina utilizza gas, elettricità o combustibili solidi. Il riscaldamento può essere diretto (il calore è applicato direttamente ai chicchi) o indiretto (il calore viene trasferito tramite un mezzo, come l’aria calda).</p>
-            <p class="paragrafo">Ventilazione e sistema di raffreddamento: dopo la tostatura, i chicchi devono essere rapidamente raffreddati per fermare il processo di cottura e preservarne il profilo aromatico. La ventilazione è importante  anche per rimuovere fumi e particelle 
-                derivanti dalla tostatura.</p>
-             <p class="paragrafo">Controllo della temperatura e del tempo: la macchina è dotata di strumenti per monitorare e regolare la temperatura e la durata del ciclo di tostatura. </p>
-             <p class="paragrafo">Scarico dei fumi: un sistema di scarico si occupa di rimuovere i fumi di scarto della tostatura.</p>
+            <p class="paragrafo"><b>Tamburo o camera di tostatura:</b> è il cuore della torrefattrice, dove i chicchi di caffè vengono riscaldati. Può essere un tamburo rotante o una camera statica con una fonte di calore.</p>
+            <p class="paragrafo"><b>Sistema di riscaldamento:</b> la macchina utilizza gas, elettricità o combustibili solidi. Il riscaldamento può essere diretto (il calore è applicato direttamente ai chicchi) o indiretto (il calore viene trasferito tramite un mezzo, come l’aria calda).</p>
+            <p class="paragrafo"><b>Ventilazione e sistema di raffreddamento:</b> dopo la tostatura, i chicchi devono essere rapidamente raffreddati per fermare il processo di cottura e preservarne il profilo aromatico. La ventilazione è importante  anche per rimuovere fumi e particelle derivanti dalla tostatura.</p>
+             <p class="paragrafo"><b>Controllo della temperatura e del tempo:</b> la macchina è dotata di strumenti per monitorare e regolare la temperatura e la durata del ciclo di tostatura. </p>
+             <p><b>Scarico dei fumi:</b> un sistema di scarico si occupa di rimuovere i fumi di scarto della tostatura.</p>
             </h5>
     </div>
 
@@ -196,5 +219,6 @@
 
 <!--Javascript-->
 <script src="js/navbar.js"></script>
+<script src="js/hamburger-menu.js"></script>
 </body>
 </html>
