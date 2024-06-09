@@ -70,12 +70,16 @@ h1 /*Titolo hero*/{
     font-size: 80px;
     line-height: 1;
     font-weight: bold;
+    max-width: 1000px;
+    margin-inline: auto;
 }
 
 h2 /*Sottotitolo hero*/{
     font-size: 30px;
     line-height: 1.5;
     font-weight: normal;
+    max-width: 800px;
+    margin-inline: auto;
 }
 
 h3 /*Titolo sezione*/{
@@ -468,8 +472,22 @@ footer {
 
 /*PAGINA CAFFè DAL MONDO*/
 .icona-nazione {
-    max-width: fit-content;
+    max-width: 1000px;
     margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 15px;
+    border: 3px solid;
+}
+
+.icona-nazione img {
+    width: 180px;
+}
+
+.icona-nazione h5 {
+    align-self: center;
+    font-weight: bold;
 }
 
 #elenco-nazioni a {
@@ -581,6 +599,12 @@ footer {
     #hero-sottotitolo {
         font-size: 25px;
     }
+
+    #blocco-hero h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -608,6 +632,10 @@ footer {
     #hero-sottotitolo {
         font-size: 20px;
     }
+
+    #blocco-hero {
+        top: 180px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -622,6 +650,15 @@ footer {
     #nav-main {
         display: flex;
         justify-content: space-between;
+    }
+
+    #blocco-hero {
+        top: 160px;
+    }
+    
+    #blocco-hero h1 {
+        font-size: 50px;
+        max-width: 600px;
     }
 }
 
@@ -652,6 +689,20 @@ footer {
         margin-top: 8vw;
     }
 
+    #blocco-hero {
+        top: 200px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #blocco-hero h1 {
+        max-width: 400px;
+    }
+
+    #hero-sottotitolo {
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -712,31 +763,13 @@ footer {
     }
 }
 
-@media (max-width: 550px) {
-    #blocco-footer-sx {
-        max-width: 150px;
+@media (max-width: 500px) {
+    #blocco-hero {
+        top: 35vw;
     }
 
-    #social-footer {
-        width: 80px;
-        gap: 10px;
-    }
-
-    #info-footer {
-        gap: 10px;
-    }
-
-    #aba-footer {
-        margin-bottom: 20px;
-    }
-
-    #marchio-footer {
-        width: 150px;
-    }
-
-
-    #blocco-footer-dx {
-        max-width: 150px;
+    #blocco-hero h1 {
+        font-size: 40px;
     }
 }
 
@@ -751,5 +784,15 @@ footer {
 
     #blocco-hero-home {
         top: 20vw;
+    }
+
+    #hero-section img {
+        height: 180vw;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #blocco-hero {
+        top: 65vw;
     }
 }
