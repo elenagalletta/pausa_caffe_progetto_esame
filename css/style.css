@@ -613,6 +613,12 @@ footer {
         max-width: 800px;
         margin-inline: auto;
     }
+
+    .card-ricette, .card-animazione-ricette, #blocco-card-ricette, .card-ricette img {
+        width: 760px;
+        margin-inline: auto;
+    }
+
     
 }
 
@@ -686,6 +692,22 @@ footer {
 
     .icona-titolo-tipologie {
         max-width: 650px;
+    }
+
+    .card-ricette, .card-animazione-ricette, .card-ricette img {
+        width: 560px;
+        height: 310px;
+        margin-inline: auto;
+    }
+
+    #blocco-card-ricette {
+        width: 560px;
+        height: fit-content;
+        margin-inline: auto;
+    }
+
+    .card-title-ricette {
+        margin: -180px auto;
     }
 }
 
@@ -805,6 +827,22 @@ footer {
 
     .img-sezione-finale {
         margin-bottom: 0; 
+    }
+
+    .card-ricette, .card-animazione-ricette, .card-ricette img {
+        width: 300px;
+        height: 300px;
+        margin-inline: auto;
+    }
+
+    #blocco-card-ricette {
+        width: 300px;
+        height: fit-content;
+        margin-inline: auto;
+    }
+
+    .card-title-ricette {
+        max-width: 250px;
     }
 
 }
