@@ -2,6 +2,11 @@
 @import url(switzer.css);
 
 @font-face {
+    font-family: 'Switzer';   
+    src: url(https://www.fontshare.com/fonts/switzer);
+}
+
+@font-face {
     font-family: 'Switzer-Regular';
     src: url('../font/Switzer-Regular.woff2') format('woff2'),
          url('../font/Switzer-Regular.woff') format('woff'),
