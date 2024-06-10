@@ -891,11 +891,11 @@ footer {
     }
 
     #blocco-hero-home {
-        top: 40vw;
+        top: 50vw;
     }
 
     .img-hero {
-        height: 180vw;
+        height: 190vw;
         object-fit: cover;
         object-position: center;
     }
