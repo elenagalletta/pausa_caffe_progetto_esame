@@ -1,52 +1,3 @@
-/*IMPOSTAZIONE FONT*/
-@import url(switzer.css);
-
-@font-face {
-    font-family: 'Switzer';   
-    src: url(https://www.fontshare.com/fonts/switzer);
-}
-
-@font-face {
-    font-family: 'Switzer-Regular';
-    src: url('../font/Switzer-Regular.woff2') format('woff2'),
-         url('../font/Switzer-Regular.woff') format('woff'),
-         url('../font/Switzer-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-}
-  
-@font-face {
-    font-family: 'Switzer-Italic';
-    src: url('../font/Switzer-Italic.woff2') format('woff2'),
-         url('../font/Switzer-Italic.woff') format('woff'),
-         url('../font/Switzer-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
-    font-style: italic;
-}
-  
-@font-face {
-    font-family: 'Switzer-Medium';
-    src: url('../font/Switzer-Medium.woff2') format('woff2'),
-         url('../font/Switzer-Medium.woff') format('woff'),
-         url('../font/Switzer-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-display: swap;
-    font-style: normal;
-}
-  
-@font-face {
-    font-family: 'Switzer-Bold';
-    src: url('../font/Switzer-Bold.woff2') format('woff2'),
-         url('../font/Switzer-Bold.woff') format('woff'),
-         url('../font/Switzer-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-display: swap;
-    font-style: normal;
-}
-
-
 /*IMPOSTAZIONI PRELIMINARI*/
   * {
     margin: 0;
@@ -81,7 +32,7 @@ h1 /*Titolo hero*/{
 
 h2 /*Sottotitolo hero*/{
     font-size: 30px;
-    line-height: 1.5;
+    line-height: 1.2;
     font-weight: normal;
     max-width: 800px;
     margin-inline: auto;
@@ -679,9 +630,6 @@ footer {
     }
 
     /*Hero section*/
-    #hero-sottotitolo {
-        font-size: 20px;
-    }
 
     #blocco-hero {
         top: 180px;
@@ -789,8 +737,10 @@ footer {
     }
 
     .img-sezione, .img-sezione-finale {
-        max-width: 600px;
+        max-width: 100%;
+        height: 500px;
         object-position: center;
+        object-fit: cover;
     }
 
     .icona-titolo-tipologie {
@@ -801,23 +751,24 @@ footer {
         margin-bottom: 10px;
     }
 
+    .img-sezione-finale {
+        margin-bottom: 0; 
+    }
+
 }
 
 @media (max-width: 600px) {
     /*Hero section*/
     #blocco-hero h1 {
-        max-width: 500px;
-    }
-
-    #hero-sottotitolo {
-        max-width: 300px;
+        max-width: 550px;
     }
 
     .img-sezione {
-        max-width: 800px;
         object-position: center;
+        height: 500px;
+        object-fit: cover;
     }
-
+    
     .icona-nazione {
         padding: 30px;
         border: 3px solid #523822;
@@ -828,10 +779,6 @@ footer {
 
     .icona-nazione h5 {
         max-width: 150px;
-    }
-
-    .img-sezione-finale {
-        margin-bottom: 0; 
     }
 
     .card-ricette, .card-animazione-ricette, .card-ricette img {
@@ -891,11 +838,6 @@ footer {
     }
 
     /*Hero section*/
-    .img-hero {
-        height: 90vw;
-        object-fit: cover;
-        object-position: left bottom;
-    }
 
     #blocco-hero-home {
         top: 15vw;
@@ -905,28 +847,29 @@ footer {
         width: 60vw;
     }
 
-    #hero-sottotitolo {
-        font-size: 18px;
-    }
 }
 
 @media (max-width: 500px) {
-    /*Hero section*/
-    #blocco-hero {
-        top: 35vw;
-    }
-
-    #blocco-hero h1 {
-        font-size: 40px;
-    }
-
+    /*Footer*/
     #info-footer {
         gap: 10px;
     }
 
+    /*Img sezioni*/
     .img-sezione {
-        max-width: fit-content;
+        height: 500px;
         object-position: center;
+        object-fit: cover;
+    }
+
+    /*Hero section*/
+    #blocco-hero h1 {
+        font-size: 45px;
+    }
+
+    #hero-sottotitolo {
+        max-width: 350px;
+        font-size: 20px;
     }
 }
 
@@ -941,11 +884,8 @@ footer {
         border: 3px solid #523822;
         border-radius: 8px;
     }
-}
 
-@media (max-width: 400px) {
     /*Hero section*/
-
     #hero-marchio {
         width: 80vw;
     }
@@ -964,7 +904,23 @@ footer {
         top: 70vw;
     }
 
+    #blocco-hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-sottotitolo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
     .icona-nazione img {
         width: 100px;
     }
+}
+
+#nav-item-home, #nav-item-storia, #nav-item-miscele, #nav-item-curiosità, #nav-item-ricette, #nav-item-caffè-dal-mondo, #nav-item-produzione {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #F9F5F1;
 }
