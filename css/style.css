@@ -417,7 +417,7 @@ footer {
     margin: 0 auto 60px auto;
 }
 
-.img-sezione {
+.img-sezione, .img-sezione-finale {
     display: block;
     margin-inline: auto;
     margin-bottom: 60px;
@@ -453,6 +453,7 @@ footer {
 
 .blocco-icona-caffe h4 {
     color: #523822;
+    margin-top: -25px;
 }
 
 .blocco-icona-caffe h4:hover {
@@ -466,6 +467,7 @@ footer {
     max-width: 1029px;
     height: fit-content;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .blocco-titolo-testo {
@@ -475,9 +477,10 @@ footer {
     margin-bottom: 60px;
 }
 
-.icona-titolo-tipologie img {
+.svg-icona-tipologie {
     width: 60px;
     height: 60px;
+    margin-left: -15px;
 }
 
 /*PAGINA CAFFè DAL MONDO*/
@@ -486,9 +489,7 @@ footer {
     margin-inline: auto;
     display: flex;
     justify-content: center;
-    row-gap: 30px;
-    padding: 15px;
-    border: 3px solid;
+    column-gap: 30px;
 }
 
 .icona-nazione img {
@@ -497,7 +498,7 @@ footer {
 
 .icona-nazione h5 {
     align-self: center;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 #elenco-nazioni a {
@@ -604,8 +605,13 @@ footer {
         width: fit-content;
     }
 
-    .blocco-sezione, .titolo-sezione, .img-sezione {
+    .blocco-sezione, .titolo-sezione, .img-sezione, .img-sezione-finale {
         max-width: 800px;
+    }
+
+    .icona-titolo-tipologie {
+        max-width: 800px;
+        margin-inline: auto;
     }
     
 }
@@ -670,12 +676,16 @@ footer {
         top: 180px;
     }
 
-    .blocco-sezione, .titolo-sezione, .img-sezione {
+    .blocco-sezione, .titolo-sezione, .img-sezione, .img-sezione-finale {
         max-width: 650px;
     }
 
     .titolo-paragrafo {
-        max-width: 250px;
+        max-width: 300px;
+    }
+
+    .icona-titolo-tipologie {
+        max-width: 650px;
     }
 }
 
@@ -748,11 +758,20 @@ footer {
     }
 
     .titolo-paragrafo {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
-    .img-sezione {
-        max-width: 500px;
+    .img-sezione, .img-sezione-finale {
+        max-width: 600px;
+        object-position: center;
+    }
+
+    .icona-titolo-tipologie {
+        margin-left: 6vw;
+    }
+
+    .paragrafo {
+        margin-bottom: 10px;
     }
 
 }
@@ -768,8 +787,24 @@ footer {
     }
 
     .img-sezione {
-        max-width: fit-content;
+        max-width: 800px;
         object-position: center;
+    }
+
+    .icona-nazione {
+        padding: 30px;
+        border: 3px solid #523822;
+        border-radius: 8px;
+        max-width: fit-content;
+        column-gap: 15px;
+    }
+
+    .icona-nazione h5 {
+        max-width: 150px;
+    }
+
+    .img-sezione-finale {
+        margin-bottom: 0; 
     }
 
 }
@@ -845,6 +880,24 @@ footer {
     #info-footer {
         gap: 10px;
     }
+
+    .img-sezione {
+        max-width: fit-content;
+        object-position: center;
+    }
+}
+
+@media (max-width: 450px) {
+    #blocco-tipologie-caffe {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .blocco-icona-caffe {
+        padding: 15px;
+        border: 3px solid #523822;
+        border-radius: 8px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -866,5 +919,9 @@ footer {
 
     #blocco-hero {
         top: 70vw;
+    }
+
+    .icona-nazione img {
+        width: 100px;
     }
 }
