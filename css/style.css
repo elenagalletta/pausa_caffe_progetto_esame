@@ -27,7 +27,7 @@ h1 /*Titolo hero*/{
     line-height: 1;
     font-weight: bold;
     max-width: 1000px;
-    margin-inline: auto;
+    margin: 0 auto 10px auto;
 }
 
 h2 /*Sottotitolo hero*/{
@@ -99,6 +99,12 @@ nav {
 .nav-scrolled {
     background-color: #6D8F71;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav-item-home, #nav-item-storia, #nav-item-miscele, #nav-item-curiosità, #nav-item-ricette, #nav-item-caffè-dal-mondo, #nav-item-produzione {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #F9F5F1;
 }
 
 
@@ -439,7 +445,7 @@ footer {
     margin-left: -15px;
 }
 
-/*PAGINA CAFFè DAL MONDO*/
+/*PAGINA CAFFÈ DAL MONDO*/
 .icona-nazione {
     max-width: 1000px;
     margin-inline: auto;
@@ -466,7 +472,7 @@ footer {
     color: #6D8F71;
 }
 
-/*Hamburger menu*/
+/*HAMBURGER MENU*/
 
 #hamburger-menu {
     background-color:rgba(25, 14, 3, 0.9);
@@ -545,6 +551,7 @@ footer {
 
 /*RESPONSIVE DESIGN*/
 @media (max-width: 1100px) {
+    /*Pagina miscele*/
     #blocco-tipologie-caffe {
         grid-template-columns: 1fr 1fr;
         justify-items: center;
@@ -560,7 +567,7 @@ footer {
     #blocco-tipologie-caffe a {
         width: fit-content;
     }
-
+    /*Testo e img sezioni*/
     .blocco-sezione, .titolo-sezione, .img-sezione, .img-sezione-finale {
         max-width: 800px;
     }
@@ -570,6 +577,7 @@ footer {
         margin-inline: auto;
     }
 
+    /*Card*/
     .card-ricette, .card-animazione-ricette, #blocco-card-ricette, .card-ricette img {
         width: 760px;
         margin-inline: auto;
@@ -630,7 +638,6 @@ footer {
     }
 
     /*Hero section*/
-
     #blocco-hero {
         top: 180px;
     }
@@ -647,6 +654,7 @@ footer {
         max-width: 650px;
     }
 
+    /*Card*/
     .card-ricette, .card-animazione-ricette, .card-ricette img {
         width: 560px;
         height: 310px;
@@ -723,6 +731,7 @@ footer {
         top: 200px;
     }
 
+    /*Testo e img*/
     .blocco-sezione {
         grid-template-columns: 1fr;
         margin-inline: 6vw;
@@ -743,16 +752,17 @@ footer {
         object-fit: cover;
     }
 
-    .icona-titolo-tipologie {
-        margin-left: 6vw;
-    }
-
     .paragrafo {
         margin-bottom: 10px;
     }
 
     .img-sezione-finale {
         margin-bottom: 0; 
+    }
+
+    /*Pagina miscele*/
+    .icona-titolo-tipologie {
+        margin-left: 6vw;
     }
 
 }
@@ -769,6 +779,7 @@ footer {
         object-fit: cover;
     }
     
+    /*Pagina caffè dal mondo*/
     .icona-nazione {
         padding: 30px;
         border: 3px solid #523822;
@@ -781,6 +792,7 @@ footer {
         max-width: 150px;
     }
 
+    /*Card*/
     .card-ricette, .card-animazione-ricette, .card-ricette img {
         width: 300px;
         height: 300px;
@@ -838,7 +850,6 @@ footer {
     }
 
     /*Hero section*/
-
     #blocco-hero-home {
         top: 15vw;
     }
@@ -874,6 +885,7 @@ footer {
 }
 
 @media (max-width: 450px) {
+    /*Pagina miscele*/
     #blocco-tipologie-caffe {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -914,13 +926,14 @@ footer {
 }
 
 @media (max-width: 400px) {
+    /*Pagina caffè dal mondo*/
     .icona-nazione img {
         width: 100px;
     }
+
+    /*Hero section*/
+    #blocco-hero h1 {
+        font-size: 36px;
+    }
 }
 
-#nav-item-home, #nav-item-storia, #nav-item-miscele, #nav-item-curiosità, #nav-item-ricette, #nav-item-caffè-dal-mondo, #nav-item-produzione {
-    font-weight: bold;
-    text-decoration: underline;
-    color: #F9F5F1;
-}
