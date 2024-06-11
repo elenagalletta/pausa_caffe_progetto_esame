@@ -28,6 +28,7 @@ h1 /*Titolo hero*/{
     font-weight: bold;
     max-width: 1000px;
     margin: 0 auto 10px auto;
+    letter-spacing: -0.6px; /*Per rimuovere il difetto di legatura tra le "ff" di "caffè"*/
 }
 
 h2 /*Sottotitolo hero*/{
@@ -260,7 +261,7 @@ nav {
     max-width: 500px;
 }
 
-/*CARD PAGINA RICETTE*/
+/*PAGINA RICETTE*/
 
 #blocco-card-ricette {
     display: grid;
@@ -290,6 +291,11 @@ nav {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
+}
+
+.lista-ingredienti {
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 
 /*ANIMAZIONE CARD RICETTE*/
@@ -678,6 +684,18 @@ footer {
     }
 }
 
+@media (max-width: 850px) {
+    /*Hero section*/
+    #blocco-hero {
+        top: 150px;
+    }
+    
+    #blocco-hero h1 {
+        font-size: 50px;
+        max-width: 600px;
+    }
+}
+
 @media (max-width: 800px) {
     /*Navbar*/
     #navbar-list {
@@ -692,15 +710,21 @@ footer {
         display: flex;
         justify-content: space-between;
     }
+}
 
+@media (max-width: 750px) {
     /*Hero section*/
-    #blocco-hero {
-        top: 160px;
+    .img-hero {
+        height: 500px;
+        object-fit: cover;
     }
-    
-    #blocco-hero h1 {
-        font-size: 50px;
-        max-width: 600px;
+
+    #blocco-hero-home {
+        margin-top: 8vw;
+    }
+
+    #blocco-hero {
+        top: 200px;
     }
 }
 
@@ -721,20 +745,6 @@ footer {
     #testo-form {
         text-align: center;
         margin: 0 auto 30px auto;
-    }
-
-    /*Hero section*/
-    .img-hero {
-        height: 500px;
-        object-fit: cover;
-    }
-
-    #blocco-hero-home {
-        margin-top: 8vw;
-    }
-
-    #blocco-hero {
-        top: 200px;
     }
 
     /*Testo e img*/
@@ -942,6 +952,19 @@ footer {
         width: 300px;
     }
 
+    #blocco-hero {
+        top: 80vw;
+    }
+
+    #hero-sottotitolo {
+        font-size: 16px;
+    }
+
+    #button-hero {
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+
     /*Footer*/
 
     footer {
@@ -986,10 +1009,4 @@ footer {
     }
     
 }
-
-.lista-ingredienti {
-    padding-left: 20px;
-    box-sizing: border-box;
-}
-
 
