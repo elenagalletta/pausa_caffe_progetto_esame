@@ -316,6 +316,12 @@ footer {
     justify-content: space-between;
 }
 
+#blocco-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 #info-footer a {
     color: #F9F5F1;
 }
@@ -933,7 +939,57 @@ footer {
     /*Hero section*/
     #blocco-hero h1 {
         font-size: 30px;
+        width: 300px;
+    }
+
+    /*Footer*/
+
+    footer {
+        height: auto;
+    }
+
+    #blocco-footer {
+        display: inline;
+        width: 100%;
+        height: auto;
+        margin-inline: auto;
+    }
+    
+    #blocco-footer-sx, #blocco-footer-dx {
+        max-width: 250px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    #blocco-footer-dx {
+        margin-top: 40px;
+    }
+    
+    #marchio-footer {
+        margin-inline: auto;
+    }
+    
+    #marchio-abact {
+        margin-bottom: 20px;
+    }
+    
+    #info-footer {
+        gap: 20px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    #social-footer {
+        width: fit-content;
+        margin-inline: auto;
+        margin-top: 20px;
     }
     
 }
+
+.lista-ingredienti {
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
 
