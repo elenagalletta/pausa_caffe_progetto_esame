@@ -771,12 +771,18 @@ footer {
     /*Hero section*/
     #blocco-hero h1 {
         max-width: 550px;
+        font-size: 45px;
     }
 
     .img-sezione {
         object-position: center;
         height: 500px;
         object-fit: cover;
+    }
+
+    #hero-sottotitolo {
+        max-width: 350px;
+        font-size: 20px;
     }
     
     /*Pagina caffè dal mondo*/
@@ -873,15 +879,6 @@ footer {
         object-fit: cover;
     }
 
-    /*Hero section*/
-    #blocco-hero h1 {
-        font-size: 45px;
-    }
-
-    #hero-sottotitolo {
-        max-width: 350px;
-        font-size: 20px;
-    }
 }
 
 @media (max-width: 450px) {
@@ -917,10 +914,12 @@ footer {
     }
 
     #blocco-hero h1 {
-        font-size: 40px;
+        font-size: 36px;
+        margin-bottom: 5px;
     }
 
-    .hero-sottotitolo {
+    #hero-sottotitolo {
+        max-width: 250px;
         font-size: 18px;
     }
 }
@@ -933,7 +932,8 @@ footer {
 
     /*Hero section*/
     #blocco-hero h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
+    
 }
 
