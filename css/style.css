@@ -74,7 +74,7 @@ nav {
 #nav-main {
     display: flex;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1920px;
     height: 50px;
     margin: 10px 6vw 10px 6vw;
     position: relative;
@@ -618,6 +618,12 @@ footer {
         gap: 20px;
     }
 
+    #navbar-list {
+        margin: 0 0 0 auto;
+        font-size: 15px;
+        gap: 10px;
+    }
+
     /*Hero section*/
     #hero-sottotitolo {
         font-size: 25px;
@@ -642,13 +648,6 @@ footer {
     #testo-form {
         text-align: center;
         margin: 0 auto 30px auto;
-    }
-
-    /*Navbar*/
-    #navbar-list {
-        margin: 0 0 0 auto;
-        font-size: 15px;
-        gap: 10px;
     }
 
     /*Hero section*/
