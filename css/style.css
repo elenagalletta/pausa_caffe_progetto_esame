@@ -597,6 +597,16 @@ footer {
         margin-inline: auto;
     }
 
+    /*Hero section*/
+    #hero-sottotitolo {
+        font-size: 25px;
+    }
+
+    #blocco-hero h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
     
 }
 
@@ -622,16 +632,6 @@ footer {
         margin: 0 0 0 auto;
         font-size: 15px;
         gap: 10px;
-    }
-
-    /*Hero section*/
-    #hero-sottotitolo {
-        font-size: 25px;
-    }
-
-    #blocco-hero h1 {
-        font-size: 60px;
-        margin-bottom: 10px;
     }
 
 }
@@ -788,7 +788,7 @@ footer {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
     /*Hero section*/
     #blocco-hero h1 {
         max-width: 550px;
@@ -836,6 +836,12 @@ footer {
         max-width: 250px;
     }
 
+}
+
+@media (max-width: 600px) {
+    #blocco-hero h1 {
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -943,31 +949,13 @@ footer {
         max-width: 250px;
         font-size: 18px;
     }
+    
 }
 
 @media (max-width: 400px) {
     /*Pagina caffè dal mondo*/
     .icona-nazione img {
         width: 100px;
-    }
-
-    /*Hero section*/
-    #blocco-hero h1 {
-        font-size: 30px;
-        width: 300px;
-    }
-
-    #blocco-hero {
-        top: 80vw;
-    }
-
-    #hero-sottotitolo {
-        font-size: 16px;
-    }
-
-    #button-hero {
-        margin-top: 20px;
-        padding: 10px 20px;
     }
 
     /*Footer*/
