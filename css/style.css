@@ -69,6 +69,7 @@ nav {
     color: inherit;
     margin-top: 5px;
     position: absolute;
+    width: 100px;
 }
 
 #nav-main {
